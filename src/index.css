@@ -4,14 +4,15 @@
   --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
   --font-serif: "Newsreader", ui-serif, Georgia, serif;
   
-  --color-primary: #000000;
-  --color-accent: #009668;
-  --color-accent-light: #6ffbbe;
-  --color-accent-dim: #4edea3;
-  --color-surface: #f9f9ff;
-  --color-surface-dim: #d3daea;
-  --color-surface-container: #e7eefe;
-  --color-surface-container-high: #e2e8f8;
+  --color-primary: #ffffff;
+  --color-accent: #00ffa3;
+  --color-accent-light: #80ffd1;
+  --color-accent-dim: #00cc82;
+  --color-surface: #050505;
+  --color-surface-dim: #121212;
+  --color-surface-container: #1a1a1a;
+  --color-surface-container-high: #242424;
+  --color-surface-container-lowest: #0a0a0a;
   
   --spacing-section-gap: 160px;
   --spacing-margin-desktop: 80px;
@@ -20,7 +21,7 @@
 
 @layer base {
   body {
-    @apply bg-surface text-primary selection:bg-accent-light selection:text-primary;
+    @apply bg-surface text-primary selection:bg-accent selection:text-surface antialiased;
   }
 }
 
