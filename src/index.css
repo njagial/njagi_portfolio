@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Hanken Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Newsreader", ui-serif, Georgia, serif;
+  
+  --color-primary: #000000;
+  --color-accent: #009668;
+  --color-accent-light: #6ffbbe;
+  --color-accent-dim: #4edea3;
+  --color-surface: #f9f9ff;
+  --color-surface-dim: #d3daea;
+  --color-surface-container: #e7eefe;
+  --color-surface-container-high: #e2e8f8;
+  
+  --spacing-section-gap: 160px;
+  --spacing-margin-desktop: 80px;
+  --spacing-margin-mobile: 24px;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-primary selection:bg-accent-light selection:text-primary;
+  }
+}
+
+.font-editorial {
+  font-family: "Newsreader", serif;
+  font-style: italic;
+}
